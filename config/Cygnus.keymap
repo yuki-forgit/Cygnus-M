@@ -58,10 +58,10 @@
 
         default_layer {
             bindings = <
-&none      &none     &kp L        &kp U           &kp F             &kp LANGUAGE_1                                    &kp LANGUAGE_2   &kp W             &kp R           &kp Y        &none  &none
+&kp PG_UP  &none     &kp L        &kp U           &kp F             &kp LANGUAGE_1                                    &kp LANGUAGE_2   &kp W             &kp R           &kp Y        &none  &kp LC(PG_DN)
 &kp Q      &kp E     &mt LCTRL I  &mt LEFT_ALT A  &mt LEFT_SHIFT O  &kp MINUS       &mkp MCLK         &kp UP_ARROW    &kp K            &mt LEFT_SHIFT T  &mt LEFT_ALT N  &mt LCTRL S  &kp H  &kp P
 &kp COMMA  &kp Z     &kp X        &kp C           &kp V             &none           &none             &kp DOWN_ARROW  &kp G            &kp D             &kp M           &kp J        &kp B  &kp PERIOD
-&none      &kp LGUI  &none        &none           &lt 3 TAB         &lt 2 SPACE     &kp LEFT_SHIFT    &kp ENTER       &lt 1 BACKSPACE                                                 &none  &none
+&none      &kp LGUI  &sl 6        &none           &lt 3 TAB         &lt 2 SPACE     &kp LEFT_SHIFT    &kp ENTER       &lt 1 BACKSPACE                                                 &none  &none
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
@@ -69,7 +69,7 @@
 
         FUNCTION {
             bindings = <
-&none          &kp F1            &kp F2             &kp F3                &kp F4         &kp F5                               &kp F6         &kp F7     &kp F8            &kp F9         &kp F10            &none
+&trans         &kp F1            &kp F2             &kp F3                &kp F4         &kp F5                               &kp F6         &kp F7     &kp F8            &kp F9         &kp F10            &trans
 &kp F11        &kp N1            &kp N2             &kp N3                &kp N4         &kp N5             &trans    &trans  &kp N6         &kp N7     &kp N8            &kp N9         &kp N0             &kp F12
 &kp LS(COMMA)  &kp LEFT_BRACKET  &kp LS(SEMICOLON)  &kp LS(SINGLE_QUOTE)  &kp LS(SLASH)  &kp LS(BACKSLASH)  &trans    &trans  &kp BACKSLASH  &kp SLASH  &kp SINGLE_QUOTE  &kp SEMICOLON  &kp RIGHT_BRACKET  &kp LS(PERIOD)
 &none          &none             &trans             &trans                &trans         &trans             &trans    &trans  &trans                                                     &none              &none
@@ -100,10 +100,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans       &trans       &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp LG(R)                      &kp LG(R)  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &trans  &trans  &trans
-&trans  &lt 5 SPACE  &lt 4 SPACE  &mkp MB1         &mkp MB2           &mkp MB3   &mkp MB3    &trans  &mkp MB3   &mkp MB1         &mkp MB2           &none   &none   &trans
-&trans  &trans       &trans       &trans           &trans             &trans     &trans      &trans  &trans     &mkp MB4         &mkp MB5           &trans  &trans  &trans
-&trans  &trans       &trans       &trans           &trans             &trans     &trans      &trans  &trans                                                 &trans  &trans
+&trans  &trans    &trans           &none             &none                 &none                                &none     &none           &mkp MB3        &trans           &trans    &trans
+&trans  &kp HOME  &mt LCTRL PG_UP  &mt LEFT_ALT ESC  &mt LEFT_SHIFT PG_DN  &kp END          &mkp MB3    &trans  &mkp MB4  &mkp MB1        &kp UP_ARROW    &mkp MB2         &mkp MB5  &trans
+&trans  &trans    &kp INS          &trans            &kp DEL               &kp PRINTSCREEN  &trans      &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans    &trans
+&trans  &trans    &trans           &trans            &trans                &trans           &trans      &trans  &trans                                                     &trans    &trans
             >;
         };
 
