@@ -58,10 +58,10 @@
 
         default_layer {
             bindings = <
-&kp LC(PAGE_UP)  &none     &kp L        &kp U           &kp F             &kp LANGUAGE_1                                    &kp LANGUAGE_2   &kp W             &kp R           &kp Y        &none  &kp LC(PAGE_DOWN)
-&kp Q            &kp E     &mt LCTRL I  &mt LEFT_ALT A  &mt LEFT_SHIFT O  &kp MINUS       &mkp MCLK         &kp UP_ARROW    &kp K            &mt LEFT_SHIFT T  &mt LEFT_ALT N  &mt LCTRL S  &kp H  &kp P
-&kp COMMA        &kp Z     &kp X        &kp C           &kp V             &none           &none             &kp DOWN_ARROW  &kp G            &kp D             &kp M           &kp J        &kp B  &kp PERIOD
-&none            &kp LGUI  &sl 6        &none           &lt 3 TAB         &lt 2 SPACE     &kp LEFT_SHIFT    &kp ENTER       &lt 1 BACKSPACE                                                 &none  &none
+&none      &none     &kp L        &kp U           &kp F             &kp LANGUAGE_1                                    &kp LANGUAGE_2   &kp W             &kp R           &kp Y        &none  &to 2
+&kp Q      &kp E     &mt LCTRL I  &mt LEFT_ALT A  &mt LEFT_SHIFT O  &kp MINUS       &mkp MCLK         &kp UP_ARROW    &kp K            &mt LEFT_SHIFT T  &mt LEFT_ALT N  &mt LCTRL S  &kp H  &kp P
+&kp COMMA  &kp Z     &kp X        &kp C           &kp V             &none           &none             &kp DOWN_ARROW  &kp G            &kp D             &kp M           &kp J        &kp B  &kp PERIOD
+&none      &kp LGUI  &sl 6        &none           &lt 3 TAB         &lt 2 SPACE     &kp LEFT_SHIFT    &kp ENTER       &lt 1 BACKSPACE                                                 &none  &none
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
@@ -78,7 +78,7 @@
 
         NUM {
             bindings = <
-&trans  &trans    &trans           &trans            &trans                &trans                                              &trans    &trans          &mkp MB3        &trans           &trans    &trans
+&trans  &trans    &trans           &trans            &trans                &trans                                              &trans    &trans          &mkp MB3        &trans           &trans    &to 0
 &trans  &kp HOME  &mt LCTRL PG_UP  &mt LEFT_ALT ESC  &mt LEFT_SHIFT PG_DN  &kp END          &kp LC(LA(KP_NUMBER_0))    &trans  &mkp MB4  &mkp MB1        &kp UP_ARROW    &mkp MB2         &mkp MB5  &trans
 &trans  &trans    &kp INS          &trans            &kp DEL               &kp PRINTSCREEN  &trans                     &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans    &trans
 &trans  &trans    &trans           &trans            &trans                &trans           &trans                     &trans  &kp DEL                                                    &trans    &trans
@@ -118,10 +118,10 @@
 
         layer_6 {
             bindings = <
-&trans  &trans  &trans        &trans        &trans        &trans                       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans
-&trans  &trans  &trans        &trans        &trans        &trans     &trans    &trans  &trans        &trans        &trans        &trans        &trans          &trans
-&trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kt KP_N4  &trans    &trans  &trans        &trans        &trans        &trans        &bt BT_CLR      &bt BT_CLR
-&trans  &trans  &trans        &trans        &trans        &trans     &trans    &trans  &trans                                                  &bt BT_CLR_ALL  &bt BT_CLR_ALL
+&trans  &trans  &trans  &trans  &trans  &trans                    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans        &trans        &trans        &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans        &trans        &trans        &bt BT_CLR      &bt BT_CLR
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                                  &bt BT_CLR_ALL  &bt BT_CLR_ALL
             >;
         };
     };
