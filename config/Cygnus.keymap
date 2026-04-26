@@ -75,7 +75,7 @@
 &trans         &trans            &trans             &trans                &trans         &trans             &trans    &trans  &trans                                                     &trans             &trans
             >;
 
-            sensor-bindings = <&ROTATE SCRL_LEFT SCRL_RIGHT>;
+            sensor-bindings = <&ROTATE SCRL_RIGHT SCRL_LEFT>;
         };
 
         NUM {
