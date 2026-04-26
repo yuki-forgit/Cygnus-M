@@ -58,10 +58,10 @@
 
         default_layer {
             bindings = <
-&none  &kp COMMA  &kp L        &kp U           &kp F             &kp LANGUAGE_1                                     &kp LANGUAGE_2   &kp W             &kp R           &kp Y        &kp PERIOD  &to 2
-&kp Q  &kp E      &mt LCTRL I  &mt LEFT_ALT A  &mt LEFT_SHIFT O  &kp MINUS       &mkp MCLK         &kp LEFT_ARROW   &kp K            &mt LEFT_SHIFT T  &mt LEFT_ALT N  &mt LCTRL S  &kp H       &kp P
-&none  &kp Z      &kp X        &kp C           &kp V             &none           &none             &kp RIGHT_ARROW  &kp G            &kp D             &kp M           &kp J        &kp B       &none
-&none  &kp LGUI   &sl 6        &none           &lt 3 TAB         &lt 2 SPACE     &kp LEFT_SHIFT    &kp ENTER        &lt 1 BACKSPACE                                                 &none       &none
+&kp LC(PG_UP)  &kp COMMA  &kp L        &kp U           &kp F             &kp LANGUAGE_1                                     &kp LANGUAGE_2   &kp W             &kp R           &kp Y        &kp PERIOD  &kp LC(PAGE_DOWN)
+&kp Q          &kp E      &mt LCTRL I  &mt LEFT_ALT A  &mt LEFT_SHIFT O  &kp MINUS       &mkp MCLK         &kp LEFT_ARROW   &kp K            &mt LEFT_SHIFT T  &mt LEFT_ALT N  &mt LCTRL S  &kp H       &kp P
+&none          &kp Z      &kp X        &kp C           &kp V             &none           &none             &kp RIGHT_ARROW  &kp G            &kp D             &kp M           &kp J        &kp B       &none
+&none          &kp LGUI   &sl 6        &none           &lt 3 TAB         &lt 2 SPACE     &kp LEFT_SHIFT    &kp ENTER        &lt 1 BACKSPACE                                                 &none       &none
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
@@ -74,17 +74,17 @@
 &kp LS(COMMA)  &kp LEFT_BRACKET  &kp LS(SEMICOLON)  &kp LS(SINGLE_QUOTE)  &kp LS(SLASH)  &kp LS(BACKSLASH)  &trans    &trans  &kp BACKSLASH  &kp SLASH  &kp SINGLE_QUOTE  &kp SEMICOLON  &kp RIGHT_BRACKET  &kp LS(PERIOD)
 &trans         &trans            &trans             &trans                &trans         &trans             &trans    &trans  &trans                                                     &trans             &trans
             >;
+
+            sensor-bindings = <&ROTATE SCRL_LEFT SCRL_RIGHT>;
         };
 
         NUM {
             bindings = <
-&trans  &trans    &trans           &trans            &trans                &trans                                              &trans    &trans          &mkp MB3        &trans           &trans    &to 0
+&trans  &trans    &trans           &trans            &trans                &trans                                              &trans    &trans          &mkp MB3        &trans           &trans    &trans
 &trans  &kp HOME  &mt LCTRL PG_UP  &mt LEFT_ALT ESC  &mt LEFT_SHIFT PG_DN  &kp END          &kp LC(LA(KP_NUMBER_0))    &trans  &mkp MB4  &mkp MB1        &kp UP_ARROW    &mkp MB2         &mkp MB5  &trans
 &trans  &trans    &kp INS          &trans            &kp DEL               &kp PRINTSCREEN  &trans                     &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans    &trans
 &trans  &trans    &trans           &trans            &trans                &trans           &trans                     &trans  &kp DEL                                                    &trans    &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp 0 0>;
         };
 
         ARROW {
@@ -94,8 +94,6 @@
 &trans  &none       &none       &kp EQUAL      &kp GRAVE      &trans      &trans    &trans  &trans      &kp LS(LG(LEFT_ARROW))  &trans       &kp LG(LS(RIGHT_ARROW))  &trans      &trans
 &trans  &trans      &trans      &trans         &trans         &trans      &trans    &trans  &trans                                                                    &trans      &trans
             >;
-
-            sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
         };
 
         MOUSE {
@@ -122,6 +120,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans        &trans        &trans        &trans          &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans        &trans        &trans        &bt BT_CLR      &bt BT_CLR
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                                  &bt BT_CLR_ALL  &bt BT_CLR_ALL
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans  &trans
             >;
         };
     };
