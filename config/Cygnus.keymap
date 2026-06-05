@@ -58,10 +58,10 @@
 
         default_layer {
             bindings = <
-&none      &kp LC(PG_UP)  &kp L        &kp U           &kp F             &kp LANGUAGE_1                                     &kp LANGUAGE_2   &kp W             &kp R           &kp Y        &kp LC(PAGE_DOWN)  &none
-&kp Q      &kp E          &mt LCTRL I  &mt LEFT_ALT A  &mt LEFT_SHIFT O  &kp MINUS       &mkp MCLK         &kp LEFT_ARROW   &kp K            &mt LEFT_SHIFT T  &mt LEFT_ALT N  &mt LCTRL S  &kp H              &kp P
-&kp COMMA  &kp Z          &kp X        &kp C           &kp V             &none           &to_layer_0       &kp RIGHT_ARROW  &kp G            &kp D             &kp M           &kp J        &kp B              &kp PERIOD
-&none      &kp LGUI       &sl 6        &none           &lt 3 TAB         &lt 2 SPACE     &kp LEFT_SHIFT    &kp ENTER        &lt 1 BACKSPACE                                                 &none              &none
+&none      &kp LC(PG_UP)  &kp L        &kp U           &kp F             &kp LANGUAGE_1                               &kp LANGUAGE_2   &kp W             &kp R           &kp Y        &kp LC(PAGE_DOWN)  &none
+&kp Q      &kp E          &mt LCTRL I  &mt LEFT_ALT A  &mt LEFT_SHIFT O  &kp MINUS       &mkp MB3          &none      &kp K            &mt LEFT_SHIFT T  &mt LEFT_ALT N  &mt LCTRL S  &kp H              &kp P
+&kp COMMA  &kp Z          &kp X        &kp C           &kp V             &none           &to_layer_0       &none      &kp G            &kp D             &kp M           &kp J        &kp B              &kp PERIOD
+&none      &kp LGUI       &to 6        &none           &lt 3 TAB         &lt 2 SPACE     &kp LEFT_SHIFT    &kp ENTER  &lt 1 BACKSPACE                                                 &mkp MB1           &mkp MB2
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
@@ -91,7 +91,7 @@
             bindings = <
 &trans  &none       &none       &kp LS(EQUAL)  &kp LS(GRAVE)  &none                         &trans      &kp LG(LEFT_ARROW)      &kp LG(TAB)  &kp LG(RIGHT_ARROW)      &trans      &trans
 &trans  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)     &kp LS(N4)     &kp LS(N5)  &trans    &trans  &kp LS(N6)  &kp LS(N7)              &kp LS(N8)   &kp LS(N9)               &kp LS(N0)  &trans
-&trans  &none       &none       &kp EQUAL      &kp GRAVE      &trans      &trans    &trans  &trans      &kp LS(LG(LEFT_ARROW))  &trans       &kp LG(LS(RIGHT_ARROW))  &trans      &trans
+&trans  &none       &none       &kp EQUAL      &kp GRAVE      &trans      &trans    &trans  &trans      &kp LS(LG(LEFT_ARROW))  &kp LG(Z)    &kp LG(LS(RIGHT_ARROW))  &trans      &trans
 &trans  &trans      &trans      &trans         &trans         &trans      &trans    &trans  &trans                                                                    &trans      &trans
             >;
         };
