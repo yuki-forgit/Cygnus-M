@@ -59,8 +59,8 @@
         default_layer {
             bindings = <
 &none      &kp LC(PG_UP)  &kp L        &kp U           &kp F             &kp LANGUAGE_1                               &kp LANGUAGE_2   &kp W             &kp R           &kp Y        &kp LC(PAGE_DOWN)  &none
-&kp Q      &kp E          &mt LCTRL I  &mt LEFT_ALT A  &mt LEFT_SHIFT O  &kp MINUS       &mkp MB3          &none      &kp K            &mt LEFT_SHIFT T  &mt LEFT_ALT N  &mt LCTRL S  &kp H              &kp P
-&kp COMMA  &kp Z          &kp X        &kp C           &kp V             &none           &to_layer_0       &none      &kp G            &kp D             &kp M           &kp J        &kp B              &kp PERIOD
+&kp Q      &kp E          &mt LCTRL I  &mt LEFT_ALT A  &mt LEFT_SHIFT O  &kp MINUS       &mkp MB3          &kp PG_UP  &kp K            &mt LEFT_SHIFT T  &mt LEFT_ALT N  &mt LCTRL S  &kp H              &kp P
+&kp COMMA  &kp Z          &kp X        &kp C           &kp V             &none           &to_layer_0       &kp PG_DN  &kp G            &kp D             &kp M           &kp J        &kp B              &kp PERIOD
 &none      &kp LGUI       &mo 6        &none           &lt 3 TAB         &lt 2 SPACE     &kp LEFT_SHIFT    &kp ENTER  &lt 1 BACKSPACE                                                 &mkp MB1           &mkp MB2
             >;
 
@@ -80,10 +80,10 @@
 
         NUM {
             bindings = <
-&trans  &trans    &trans           &trans            &trans                &trans                                              &trans    &trans          &mkp MB3        &trans           &trans    &trans
-&trans  &kp HOME  &mt LCTRL PG_UP  &mt LEFT_ALT ESC  &mt LEFT_SHIFT PG_DN  &kp END          &kp LC(LA(KP_NUMBER_0))    &trans  &mkp MB4  &mkp MB1        &kp UP_ARROW    &mkp MB2         &mkp MB5  &trans
-&trans  &trans    &kp INS          &trans            &kp DEL               &kp PRINTSCREEN  &trans                     &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans    &trans
-&trans  &trans    &trans           &trans            &trans                &trans           &trans                     &trans  &kp DEL                                                    &trans    &trans
+&trans  &trans    &trans           &trans            &trans                &trans                             &trans    &trans          &mkp MB3        &trans           &trans    &trans
+&trans  &kp HOME  &mt LCTRL PG_UP  &mt LEFT_ALT ESC  &mt LEFT_SHIFT PG_DN  &kp END          &none     &trans  &mkp MB4  &mkp MB1        &kp UP_ARROW    &mkp MB2         &mkp MB5  &trans
+&trans  &trans    &kp INS          &trans            &kp DEL               &kp PRINTSCREEN  &trans    &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans    &trans
+&trans  &trans    &trans           &trans            &trans                &trans           &trans    &trans  &kp DEL                                                    &trans    &trans
             >;
         };
 
